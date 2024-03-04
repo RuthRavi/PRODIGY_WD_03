@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: red; /* Make the title red */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: red; /* Make the blocks red */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
